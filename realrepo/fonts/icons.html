@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts.css">
+    <title>icons</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .icblock {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 20px;
+            background-color: rgb(242, 247, 251);
+        }
+        .icnum {
+            font-family: pe_text_style_2;
+            font-size: 24px;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            color: rgb(255, 83, 112);
+        }
+        .micon {
+            font-size: 40px;
+            font-family: bulk_icon_coll;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            color: rgb(64, 153, 255);
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        let ic_codes = [
+            422, "639-643", 1044, "1054-1090", 1092
+        ]
+
+        function printIcon(number) {
+            let myTag = `<div class="icblock"><div class="icnum">${number}</div><div class="micon">&#${number}</div></div>`;
+            document.write(myTag);
+        }
+
+        for (let mindex = 0; mindex < ic_codes.length; mindex++) {
+
+            let thisItem = ic_codes[mindex]
+
+            if(typeof(thisItem) == "string") {
+
+                myArray = thisItem.split("-");
+                
+                for(let mstart = myArray[0]; mstart <= myArray[1]; mstart ++) {
+                    printIcon(mstart);
+                }
+                
+            }else {
+                printIcon(thisItem);
+            }
+        }
+    </script>
+</body>
+</html>
