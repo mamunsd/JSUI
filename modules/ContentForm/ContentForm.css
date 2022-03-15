@@ -1,0 +1,50 @@
+[data-pe-name="ContentForm"] {
+    display: grid;
+    grid-template-columns: 1fr 1fr 80px;
+    overflow: hidden;
+}
+
+[data-pe-name="ContentForm"] [pe-name="RightPanel"],
+[data-pe-name="ContentForm"] [pe-name="LeftPanel"] {
+    padding: 20px;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+    overflow-y: auto;
+}
+
+[data-pe-name="ContentForm"] [pe-name="RightPanel"] > div,
+[data-pe-name="ContentForm"] [pe-name="LeftPanel"] > div {
+    margin-bottom: 20px;
+}
+[data-pe-name="ContentForm"] ctopbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 30px;
+    top: 0px;
+    min-height: 80px;
+    max-height: 80px;
+}
+[data-pe-name="ContentForm"] pebtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+    line-height: 40px;
+    font-size: 16px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 4px;
+    background-color: var(--cbv);
+    user-select: none;
+    cursor: default;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    transition: all .3s var(--anim2);
+}
+[data-pe-name="ContentForm"] pebtn:hover {
+    background-color: var(--cdrk5);
+}
+[data-pe-name="ContentForm"] pebtn.clicked {
+    background-color: var(--cbv);
+}

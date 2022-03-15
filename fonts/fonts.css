@@ -1,0 +1,27 @@
+@font-face {
+    font-family: pe_text_style_1;
+    src: url(BalooDa2-Regular.ttf);
+    unicode-range: U+00-FF, U+980-9FF;
+}
+
+@font-face {
+    font-family: pe_text_style_1;
+    src: url(Poppins-Regular.ttf);
+    unicode-range: 0020 — 007F, 00A0 — 00FF, 0100 — 017F, 0180 — 024F;
+}
+
+@font-face {
+    font-family: pe_text_style_2;
+    src: url(ckr.ttf);
+    unicode-range: U+00-FF, U+980-9FF;
+}
+
+@font-face {
+    font-family: pe_text_style_2;
+    src: url(Montserrat-VariableFont_wght.ttf);
+    unicode-range: 0020 — 007F, 00A0 — 00FF, 0100 — 017F, 0180 — 024F;
+}
+@font-face {
+    font-family: jsduicon;
+    src: url(merged-icon-font.ttf);
+}

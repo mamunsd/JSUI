@@ -1,0 +1,23 @@
+[data-pe-uitype="peNavBarS1"] {
+    min-height: 80px;
+    height: 80px;
+    max-height: 80px;
+    overflow-y: hidden;
+    display: flex;    
+}
+
+[data-pe-uitype="peNavBarS1"] [name="logo"] {
+    min-width: 250px;
+}
+
+[data-pe-uitype="peNavBarS1"] [name="nav"] {
+    flex-grow: 1;
+}
+
+[data-pe-uitype="peNavBarS1"] [name="search"] {
+    width: 250px;
+}
+
+[data-pe-uitype="peNavBarS1"] [name="act"] {
+    width: 250px;
+}

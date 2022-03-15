@@ -1,0 +1,46 @@
+[data-pe-name="AppHome"] {
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+[data-pe-name="AppHome"] [name="logo"] {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 40px;
+}
+
+[data-pe-name="AppHome"] [pe-name="logo-img"]{
+    background-image: url("../../images/svg/tiger-svgrepo-com.svg");
+    height: 60px;
+    width: 60px;
+    background-size: 100%;
+}
+
+[pe-name="side-bar"] {
+    position: fixed;
+    max-height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
+    left: 0;
+    top: 80px;
+    width: 350px;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: var(--cdrk3);
+    transition: all .3s ease;
+}
+
+[pe-name="side-bar"].closed {
+    left: -450px;
+}
+
+[data-pe-name="AppHome"] [pe-name="contFirst"] {
+    position: relative;
+    min-height: calc(100vh - 80px);
+    max-height: calc(100vh - 80px);
+    overflow: hidden;
+    overflow-y: auto;
+}
